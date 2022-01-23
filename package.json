@@ -1,0 +1,41 @@
+{
+  "name": "b2b-spa",
+  "version": "0.0.1",
+  "author": "Patrik Racsko",
+  "scripts": {
+    "start": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src/",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.12.4",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.25.0",
+    "dotenv": "^14.2.0",
+    "pinia": "^2.0.9",
+    "quasar": "^2.4.12",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@quasar/vite-plugin": "^1.0.4",
+    "@types/node": "^17.0.10",
+    "@typescript-eslint/parser": "^5.10.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "prettier": "^2.5.1",
+    "sass": "1.32.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
