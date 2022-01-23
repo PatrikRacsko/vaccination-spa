@@ -8,20 +8,14 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src/",
     "format": "prettier . --write",
-    "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "prepare": "husky install",
+    "test": "npm run lint && npm run format"
   },
   "dependencies": {
     "@quasar/extras": "^1.12.4",
     "@types/axios": "^0.14.0",
     "axios": "^0.25.0",
     "dotenv": "^14.2.0",
-    "husky": "^7.0.4",
     "pinia": "^2.0.9",
     "quasar": "^2.4.12",
     "vue": "^3.2.25",
@@ -44,6 +38,7 @@
     "stylelint-config-standard": "^24.0.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
-    "vue-tsc": "^0.29.8"
+    "vue-tsc": "^0.29.8",
+    "husky": "^7.0.0"
   }
 }

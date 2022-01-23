@@ -14,7 +14,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer v-model="leftDrawerOpen" show-if-above side="left" bordered>
       <div class="q-pa-md q-gutter-sm">
         <q-tree
           default-expand-all
@@ -24,13 +24,14 @@
       </div>
     </q-drawer>
 
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
+    <q-drawer v-model="rightDrawerOpen" show-if-above side="right" bordered>
       <user-information :user-data="selectedUser"/>
     </q-drawer>
 
     <q-page-container>
       <div 
         v-for="(user, idx) in userStore.usersData"
+        :key="idx"
         style="padding-bottom: 10px"
         class="fit row wrap items-start justify-center content-start">
         <q-card    
@@ -64,7 +65,6 @@
   import { ref } from 'vue'
   import { useUsers } from '@/store/User';
   import UserInformation from '@/components/UserInformation.vue';
-import { UserData } from '@/types/VaccinationTypes';
 
   // definitions
   const userStore = useUsers()

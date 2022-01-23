@@ -2,9 +2,9 @@ import axios, {AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse} fro
 
 
 export const HTTPClient: AxiosInstance = axios.create({
-  baseURL: process.env.VUE_APP_BASE_URL,
+  baseURL: import.meta.env.VITE_BASE_URL,//i.env.VITE_APP_BASE_URL,
   headers: {
-    'x-hasura-admin-secret': process.env.VUE_APP_API_SECRET || ""
+    'x-hasura-admin-secret': import.meta.env.VITE_APP_API_SECRET || ""
   }
 });
 
