@@ -1,10 +1,10 @@
 # Vaccination project scaffolding example
 
-This playground is just a test for best practices. Heavily typed base logic with resuable components built on bootstrap from Quasar. Blazing fast HMR and build time by Vite. 
+This playground is just a test for best practices. Heavily typed base logic with resuable components built on bootstrap from Quasar. Blazing fast HMR and build time by Vite.
 
 # Tech stack
-## Vue 3 + Typescript + Vite
 
+## Vue 3 + Typescript + Vite
 
 ## Recommended IDE Setup
 
